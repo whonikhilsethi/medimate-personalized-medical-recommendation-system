@@ -1,2 +1,2 @@
-# MediMate-A-Personalized-Medical-Recommendation-System
+# MediMate Personalized Medical Recommendation System
 
