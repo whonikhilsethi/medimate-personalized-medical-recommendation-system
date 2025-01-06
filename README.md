@@ -2,6 +2,8 @@
 
 Medimate is a full-stack web application built with Flask that leverages advanced AI algorithms to provide fast, accurate medical insights based on your symptoms. By analyzing your inputs, Medimate quickly matches them to a comprehensive database of medical information, offering potential diagnoses in real-time. This enables users to make informed decisions about their health and take timely action. Medimate also provides tailored recommendations, including treatment options, diet suggestions, and lifestyle tips, making healthcare accessible and personalized.
 
+Medimate has been trained using multiple machine learning models, but the disease prediction is performed using the Support Vector Classifier (SVC) due to its better performance and accuracy.
+
 Whether for minor discomfort or more serious concerns, Medimate empowers users to understand and manage their health effectively.
 
 ## Table of Contents 📚
@@ -57,16 +59,45 @@ This web application uses AI and machine learning to analyze **132 symptoms** an
    
    ```bash
    cd medimate
-   
+
 5. Install the required Python packages:
    
    ```bash
    pip install -r requirements.txt
 
-How to Run 🚀
+## How to Run 🚀
 After setting up the environment, follow these steps to run the application locally:
+1. Navigate to the project directory (if not already there):
 
-Navigate to the project directory (if not already there):
+   ```bash
+   cd medimate
+
+2. Run the Flask application:
+   
+   ```bash
+   python app.py
+3. Open your browser and go to http://127.0.0.1:5000/ to start using Medimate.
+
+## Routes 🌐
+* **Home (/):** Displays the homepage where users can input their symptoms to receive disease predictions.
+* **Predict (/predict):** Accepts user input for symptoms and returns predicted diseases along with health recommendations.
+* **About (/about):** Displays information about the project and its purpose.
+
+## Acknowledgments 🙏
+Thanks to the open-source community for the tools and libraries used in this project.
+Special thanks to my teammates: [@Nikhil Sethi](https://github.com/NikhilSethi), [@Prason Jena](https://github.com/PrasonJena), and [@Bhavish Makkar](https://github.com/BhavishMakkar) for their valuable contributions to the project.
+
+## Feedback & Improvements 💬
+
+For feedback or suggestions, feel free to reach out via email at **darshhwork@gmail.com**. 📧
+
+This project is continuously evolving, and we welcome your insights to help improve and enhance its features. 🚀💡
+
+
+
+
+
+
 
 
 
