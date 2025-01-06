@@ -53,9 +53,11 @@ This web application uses AI and machine learning to analyze **132 symptoms** an
    git clone https://github.com/yourusername/medimate.git
    
 2. Navigate to the project directory:
+   ```bash
    cd medimate
    
 3. Install the required Python packages:
+   ```bash
    pip install -r requirements.txt
 
 How to Run 🚀
