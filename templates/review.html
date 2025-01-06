@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medimate - User Reviews</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon.png') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .review-card {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #302b63;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            height:180px;
+            background: linear-gradient(to right, rgba(255, 110, 127, 0.3), rgba(191, 233, 255, 0.3));
+            font-size:15px;
+            font-style:italic;
+        }
+
+        .star-rating .fa {
+            color: #e65c00;
+        }
+        .profile-pic {
+            width: 60px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .name{
+            color:#061161;
+            font-style:normal;
+        }
+        .review-heading{
+            font-family: 'Poppins', sans-serif;
+            font-weight:800;
+            color:#360033;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar custom-navbar">
+    <div class="navbar-logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-image">
+        <span class="navbar-title">Medimate - Medical Recommendation System</span>
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        <li><a href="{{ url_for('review') }}">Reviews</a></li>
+    </ul>
+    <div class="navbar-search">
+        <input type="search" placeholder="Search...">
+        <button>Search</button>
+    </div>
+</nav>
+
+
+
+
+
+
+<!-- Review Cards -->
+<div class="container">
+    <h1 class="my-4 text-center review-heading">User Reviews for Medimate</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="review-card">
+                <div class="d-flex align-items-start">
+                    <img src="{{ url_for('static', filename='images/profile1.jpg') }}" alt="Profile Picture" class="profile-pic">
+                    <div>
+                        <h5 class="mb-1 name">Arjun Verma</h5>
+                        <div class="star-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-2">"Medimate helped me understand my symptoms better and provided great recommendations. Highly recommended!"</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="review-card">
+                <div class="d-flex align-items-start">
+                    <img src="{{ url_for('static', filename='images/profile2.jpg') }}" alt="Profile Picture" class="profile-pic">
+                    <div>
+                        <h5 class="mb-1 name">Harpreet Singh</h5>
+                        <div class="star-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-2">"A fantastic tool for anyone needing medical advice. It’s user-friendly and accurate!"</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="review-card">
+                <div class="d-flex align-items-start">
+                    <img src="{{ url_for('static', filename='images/profile4.jpg') }}" alt="Profile Picture" class="profile-pic">
+                    <div>
+                        <h5 class="mb-1 name">Ananya Sharma</h5>
+                        <div class="star-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half-alt"></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-2">"Medimate was a lifesaver when I had questions about my health. Great support!"</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="review-card">
+                <div class="d-flex align-items-start">
+                    <img src="{{url_for('static', filename='images/profile6.png') }}" alt="Profile Picture" class="profile-pic">
+                    <div>
+                        <h5 class="mb-1 name">Rohit Patel</h5>
+                        <div class="star-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-2">"I love using Medimate! The information is always clear and helpful!"</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="review-card">
+                <div class="d-flex align-items-start">
+                    <img src="{{ url_for('static', filename='images/profile7.png') }}" alt="Profile Picture" class="profile-pic">
+                    <div>
+                        <h5 class="mb-1 name">Amit Yadav</h5>
+                        <div class="star-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half-alt"></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-2">"Very easy to navigate and find the answers I need. Highly recommended!"</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="review-card">
+                <div class="d-flex align-items-start">
+                    <img src="{{ url_for('static', filename='images/profile8.png') }}" alt="Profile Picture" class="profile-pic">
+                    <div>
+                        <h5 class="mb-1 name">Vikram Rao</h5>
+                        <div class="star-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-2">"Medimate is a reliable source for health information. Always accurate and supportive!"</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-logo-menu">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="footer-logo">
+            <div class="footer-menu">
+                <a href="{{url_for('home')}}">Home</a>
+                <span>|</span>
+                <a href="{{url_for('about')}}">About Us</a>
+                <span>|</span>
+                <a href="{{url_for('contact')}}">Contact Us</a>
+                <span>|</span>
+                <a href="{{url_for('review')}}">Reviews</a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <p>
+                <img src="{{ url_for('static', filename='images/call.png') }}" alt="Phone" class="footer-icon">
+                Call Us: <a href="tel:011 1234 5678">011-1234-5678</a>
+            </p>
+            <p>
+                <img src="{{ url_for('static', filename='images/email.png') }}" alt="Email" class="footer-icon">
+                Email Us: <a href="info@medimate.com">info@medimate.com</a>
+            </p>
+        </div>
+        <div class="footer-description">
+            <p>AI-based Medical Recommendation System analyzing <strong>
+                132 symptoms </strong> for <strong> 41 diseases</strong>. Providing personalized health insights and
+                recommendations.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 Medimate. All rights reserved.
+    </div>
+</footer>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

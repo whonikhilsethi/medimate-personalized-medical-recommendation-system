@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Medimate</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon.png') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-header h1 {
+            font-size: 3rem;
+            margin-top:45px;
+            font-weight: 800;
+            color:#360033;
+        }
+
+        .about-header h2{
+            margin-top:25px;
+            color:#cc5333;
+        }
+
+        .about-header p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-top: 15px;
+            text-align:justify;
+            color:#134E5E;
+            font-weight:500px;
+        }
+
+        .feature-section {
+            background: linear-gradient(to right, rgba(218, 226, 248, 0.4), rgba(214, 164, 164, 0.4));
+            padding: 50px 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+            height:525px;
+        }
+
+        .feature-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #243B55;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            width: 48%;
+            height:170px;
+            background:#fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border:1px solid #6f0000;
+        }
+
+        .feature-item h4 {
+            font-size: 1.5rem;
+            color: #1565C0;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .feature-item p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            color: #44A08D;
+        }
+
+        .team-section {
+            margin-top: 45px;
+        }
+
+        .team-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #000046;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height:530px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member img {
+            width: 300px;
+            height: 270px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+
+        .team-member h5 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #8E0E00;
+        }
+
+
+        .team-member p {
+            color: #777;
+            padding:10px;
+            text-align:center;
+            color:#4b6cb7;
+        }
+
+        .found{
+           font-weight:600px;
+        }
+
+
+
+        .highlight {
+            font-weight: bold;
+            color: #f8b500;
+        }
+
+        .card {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar custom-navbar">
+    <div class="navbar-logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-image">
+        <span class="navbar-title">Medimate - Medical Recommendation System</span>
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        <li><a href="{{ url_for('review') }}">Reviews</a></li>
+    </ul>
+    <div class="navbar-search">
+        <input type="search" placeholder="Search...">
+        <button>Search</button>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- About Us Section -->
+    <div class="about-header">
+        <h1>About Medimate</h1>
+        <h2>Medimate: Your Partner in Personalized Healthcare</h2>
+        <p>Medimate leverages advanced AI algorithms to provide fast, accurate medical insights based on your symptoms.
+            By analyzing your inputs, it quickly matches them to a comprehensive database of medical information,
+            offering potential diagnoses in real-time. This enables users to make informed decisions about their health
+            and take timely action. Medimate also provides tailored recommendations, including treatment options, diet
+            suggestions, and lifestyle tips, making healthcare accessible and personalized. Whether for minor discomfort
+            or more serious concerns,
+            Medimate empowers users to understand and manage their health effectively.</p>
+    </div>
+    <!-- Feature Section -->
+    <div class="feature-section">
+        <h2>What Makes Medimate Stand Out?</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h4><i class="fas fa-notes-medical"></i> Analyze 132 Symptoms</h4>
+                <p>Medimate uses advanced algorithms to evaluate your reported symptoms, giving you insights into your
+                    health.</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fas fa-notes-medical"></i> Uncover 41 Potential Diseases</h4>
+                <p>With quick analysis, Medimate helps you identify possible diseases, giving you the clarity you need
+                    to act fast.</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fas fa-notes-medical"></i> Receive Tailored Recommendations</h4>
+                <p>Get personalized advice, including disease descriptions, medications, health tips, and diet
+                    recommendations.</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fas fa-notes-medical"></i> Precautions and Next Steps</h4>
+                <p>Based on your symptoms, receive actionable recommendations on precautions and when to consult a
+                    healthcare professional.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="row">
+            <!-- Team Member 1 (AI/ML Expert) -->
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/darshh.jpg') }}" alt="Darshh Chhabra">
+                    <h5>Darshh Chhabra</h5>
+                    <p style="color: #3A6073;"><strong>Co-Founder & AI/ML Enthusiast</strong></p>
+                    <p>Developed and trained ML models for disease prediction,
+                        deployed models in Flask, and enhanced the web interface with interactive sliders for a seamless
+                        experience.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 2 (AI/ML Expert) -->
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/bhavish.jpg') }}" alt="Bhavish Makkar">
+                    <h5>Bhavish Makkar</h5>
+                    <p style="color: #3A6073;"><strong>Co-Founder & AI/ML Enthusiast</strong></p>
+                    <p>Worked on building and fine-tuning machine learning models, ensuring their smooth integration
+                        with the web interface for optimal user experience.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 3 (Web Developer) -->
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/prason.jpg') }}" alt="Prason Jena">
+                    <h5>Prason Jena</h5>
+                    <p style="color: #3A6073;"><strong>Co-Founder & Web Developer</strong></p>
+                    <p>Developed the web interface and integrated AI models with Flask for seamless front-end and
+                        back-end communication.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 4 (Web Developer) -->
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/nikhil.jpg') }}" alt="Nikhil Sethi">
+                    <h5>Nikhil Sethi</h5>
+                    <p style="color: #3A6073;"><strong>Co-Founder & Web Developer</strong></p>
+                    <p>Designed a user-friendly web interface and ensured seamless integration of Flask-deployed machine
+                        learning models with the frontend.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-info mt-3 disclaimer" role="alert">
+    <strong>Note:</strong> This is a minor project developed by us for our 7th semester. The AI-based recommendation
+    system provides general advice based on reported symptoms and may not always be accurate. It should not replace
+    professional medical consultation. Always seek guidance from a healthcare professional for an accurate diagnosis and
+    treatment.
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-top">
+        <div class="footer-logo-menu">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="footer-logo">
+            <div class="footer-menu">
+                <a href="{{url_for('home')}}">Home</a>
+                <span>|</span>
+                <a href="{{url_for('about')}}">About Us</a>
+                <span>|</span>
+                <a href="{{url_for('contact')}}">Contact Us</a>
+                <span>|</span>
+                <a href="{{url_for('review')}}">Reviews</a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <p>
+                <img src="{{ url_for('static', filename='images/call.png') }}" alt="Phone" class="footer-icon">
+                Call Us: <a href="tel:011 1234 5678">011-1234-5678</a>
+            </p>
+            <p>
+                <img src="{{ url_for('static', filename='images/email.png') }}" alt="Email" class="footer-icon">
+                Email Us: <a href="info@medimate.com">info@medimate.com</a>
+            </p>
+        </div>
+        <div class="footer-description">
+            <p>AI-based Medical Recommendation System analyzing <strong>
+                132 symptoms </strong> for <strong> 41 diseases</strong>. Providing personalized health insights and
+                recommendations.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 Medimate. All rights reserved.
+    </div>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

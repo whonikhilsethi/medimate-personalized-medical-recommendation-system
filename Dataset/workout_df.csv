@@ -1,0 +1,422 @@
+,Unnamed: 0,disease,workout
+0,0,Fungal infection,Avoid sugary foods
+1,1,Fungal infection,Consume probiotics
+2,2,Fungal infection,Increase intake of garlic
+3,3,Fungal infection,Include yogurt in diet
+4,4,Fungal infection,Limit processed foods
+5,5,Fungal infection,Stay hydrated
+6,6,Fungal infection,Consume green tea
+7,7,Fungal infection,Eat foods rich in zinc
+8,8,Fungal infection,Include turmeric in diet
+9,9,Fungal infection,Eat fruits and vegetables
+10,10,Allergy,Avoid allergenic foods
+11,11,Allergy,Consume anti-inflammatory foods
+12,12,Allergy,Include omega-3 fatty acids
+13,13,Allergy,Stay hydrated
+14,14,Allergy,Eat foods rich in vitamin C
+15,15,Allergy,Include quercetin-rich foods
+16,16,Allergy,Consume local honey
+17,17,Allergy,Limit processed foods
+18,18,Allergy,Include ginger in diet
+19,19,Allergy,Avoid artificial additives
+20,20,GERD,Consume smaller meals
+21,21,GERD,"Avoid trigger foods (spicy, fatty)"
+22,22,GERD,Eat high-fiber foods
+23,23,GERD,Limit caffeine and alcohol
+24,24,GERD,Chew food thoroughly
+25,25,GERD,Avoid late-night eating
+26,26,GERD,Consume non-citrus fruits
+27,27,GERD,Include lean proteins
+28,28,GERD,Stay hydrated
+29,29,GERD,Avoid carbonated beverages
+30,30,Chronic cholestasis,Consume a low-fat diet
+31,31,Chronic cholestasis,Eat high-fiber foods
+32,32,Chronic cholestasis,Include healthy fats
+33,33,Chronic cholestasis,Limit alcohol consumption
+34,34,Chronic cholestasis,Stay hydrated
+35,35,Chronic cholestasis,Consume antioxidant-rich foods
+36,36,Chronic cholestasis,Include omega-3 fatty acids
+37,37,Chronic cholestasis,Include lean proteins
+38,38,Chronic cholestasis,Limit processed foods
+39,39,Chronic cholestasis,Avoid fried foods
+40,40,Drug Reaction,Discontinue offending medication
+41,41,Drug Reaction,Stay hydrated
+42,42,Drug Reaction,Include anti-inflammatory foods
+43,43,Drug Reaction,Consume antioxidants
+44,44,Drug Reaction,Avoid trigger foods
+45,45,Drug Reaction,Include omega-3 fatty acids
+46,46,Drug Reaction,Limit caffeine and alcohol
+47,47,Drug Reaction,Stay hydrated
+48,48,Drug Reaction,Eat a balanced diet
+49,49,Drug Reaction,Consult a healthcare professional
+50,50,Peptic ulcer disease,"Consume smaller, more frequent meals"
+51,51,Peptic ulcer disease,"Avoid trigger foods (spicy, acidic)"
+52,52,Peptic ulcer disease,Include high-fiber foods
+53,53,Peptic ulcer disease,Limit caffeine and alcohol
+54,54,Peptic ulcer disease,Stay hydrated
+55,55,Peptic ulcer disease,Consume probiotics
+56,56,Peptic ulcer disease,Include lean proteins
+57,57,Peptic ulcer disease,Include antioxidant-rich foods
+58,58,Peptic ulcer disease,Limit processed foods
+59,59,Peptic ulcer disease,Avoid smoking and alcohol
+60,60,AIDS,Follow a balanced and nutritious diet
+61,61,AIDS,Include lean proteins
+62,62,AIDS,Consume nutrient-rich foods
+63,63,AIDS,Stay hydrated
+64,64,AIDS,Include healthy fats
+65,65,AIDS,Avoid raw or undercooked foods
+66,66,AIDS,Limit sugary foods and beverages
+67,67,AIDS,Consume immune-boosting foods
+68,68,AIDS,Take prescribed supplements
+69,69,AIDS,Consult a healthcare professional
+70,70,Gastroenteritis,Stay hydrated
+71,71,Gastroenteritis,Consume clear fluids
+72,72,Gastroenteritis,"Follow the BRAT diet (bananas, rice, applesauce, toast)"
+73,73,Gastroenteritis,Include bland foods
+74,74,Gastroenteritis,Avoid fatty and greasy foods
+75,75,Gastroenteritis,Limit caffeine and alcohol
+76,76,Gastroenteritis,Avoid spicy foods
+77,77,Gastroenteritis,Consult a healthcare professional
+78,78,Gastroenteritis,Gradually reintroduce solid foods
+79,79,Gastroenteritis,Avoid dairy products
+80,80,Bronchial Asthma,Include anti-inflammatory foods
+81,81,Bronchial Asthma,Consume omega-3 fatty acids
+82,82,Bronchial Asthma,Limit sodium intake
+83,83,Bronchial Asthma,Stay hydrated
+84,84,Bronchial Asthma,Include antioxidant-rich foods
+85,85,Bronchial Asthma,Avoid sulfite-containing foods
+86,86,Bronchial Asthma,Limit processed foods
+87,87,Bronchial Asthma,Consume magnesium-rich foods
+88,88,Bronchial Asthma,Consult a healthcare professional
+89,89,Bronchial Asthma,Avoid trigger foods
+90,90,Hypertension,Follow the DASH diet (Dietary Approaches to Stop Hypertension)
+91,91,Hypertension,Limit sodium intake
+92,92,Hypertension,Include potassium-rich foods
+93,93,Hypertension,Stay hydrated
+94,94,Hypertension,Consume calcium-rich foods
+95,95,Hypertension,Limit alcohol consumption
+96,96,Hypertension,Include magnesium-rich foods
+97,97,Hypertension,Consume omega-3 fatty acids
+98,98,Hypertension,Limit processed foods
+99,99,Hypertension,Consult a healthcare professional
+100,100,Migraine,Identify and avoid trigger foods
+101,101,Migraine,Stay hydrated
+102,102,Migraine,Include magnesium-rich foods
+103,103,Migraine,Consume omega-3 fatty acids
+104,104,Migraine,Limit caffeine and alcohol
+105,105,Migraine,Consume riboflavin-rich foods
+106,106,Migraine,Limit processed foods
+107,107,Migraine,Maintain regular meal times
+108,108,Migraine,Consult a healthcare professional
+109,109,Migraine,Manage stress
+110,110,Cervical spondylosis,Include anti-inflammatory foods
+111,111,Cervical spondylosis,Consume omega-3 fatty acids
+112,112,Cervical spondylosis,Include vitamin D-rich foods
+113,113,Cervical spondylosis,Stay hydrated
+114,114,Cervical spondylosis,Consume antioxidant-rich foods
+115,115,Cervical spondylosis,Limit processed foods
+116,116,Cervical spondylosis,Include lean proteins
+117,117,Cervical spondylosis,Practice good posture
+118,118,Cervical spondylosis,Consult a healthcare professional
+119,119,Cervical spondylosis,Engage in regular exercise
+120,120,Paralysis (brain hemorrhage),Follow a balanced and nutritious diet
+121,121,Paralysis (brain hemorrhage),Include lean proteins
+122,122,Paralysis (brain hemorrhage),Consume nutrient-rich foods
+123,123,Paralysis (brain hemorrhage),Stay hydrated
+124,124,Paralysis (brain hemorrhage),Include healthy fats
+125,125,Paralysis (brain hemorrhage),Limit sugary foods and beverages
+126,126,Paralysis (brain hemorrhage),Include antioxidants
+127,127,Paralysis (brain hemorrhage),Consume foods rich in vitamin K
+128,128,Paralysis (brain hemorrhage),Consult a healthcare professional
+129,129,Paralysis (brain hemorrhage),Manage stress
+130,130,Jaundice,Stay hydrated
+131,131,Jaundice,Consume nutrient-rich foods
+132,132,Jaundice,Include protein-rich foods
+133,133,Jaundice,Consume easily digestible foods
+134,134,Jaundice,Limit fatty foods
+135,135,Jaundice,Avoid alcohol and caffeine
+136,136,Jaundice,Include vitamin C-rich foods
+137,137,Jaundice,Consult a healthcare professional
+138,138,Jaundice,Rest and conserve energy
+139,139,Jaundice,Gradually resume normal diet
+140,140,Malaria,Stay hydrated
+141,141,Malaria,Consume nutrient-rich foods
+142,142,Malaria,Include protein-rich foods
+143,143,Malaria,Consume foods rich in antioxidants
+144,144,Malaria,Limit fatty and greasy foods
+145,145,Malaria,Avoid alcohol and caffeine
+146,146,Malaria,Include vitamin C-rich foods
+147,147,Malaria,Consult a healthcare professional
+148,148,Malaria,Rest and conserve energy
+149,149,Malaria,Gradually resume normal diet
+150,150,Chicken pox,Stay hydrated
+151,151,Chicken pox,Include easily digestible foods
+152,152,Chicken pox,Include vitamin C-rich foods
+153,153,Chicken pox,Consume protein-rich foods
+154,154,Chicken pox,Include zinc-rich foods
+155,155,Chicken pox,Avoid spicy and acidic foods
+156,156,Chicken pox,Consult a healthcare professional
+157,157,Chicken pox,Practice good hygiene
+158,158,Chicken pox,Rest and conserve energy
+159,159,Chicken pox,Gradually resume normal diet
+160,160,Dengue,Stay hydrated
+161,161,Dengue,Include nutrient-rich foods
+162,162,Dengue,Consume foods rich in vitamin C and antioxidants
+163,163,Dengue,Limit fatty and greasy foods
+164,164,Dengue,Avoid caffeine and alcohol
+165,165,Dengue,Include soft and easily digestible foods
+166,166,Dengue,Consult a healthcare professional
+167,167,Dengue,Rest and conserve energy
+168,168,Dengue,Gradually resume normal diet
+169,169,Dengue,Follow medical recommendations
+170,170,Typhoid,Consume easily digestible foods
+171,171,Typhoid,Stay hydrated
+172,172,Typhoid,Include nutrient-rich foods
+173,173,Typhoid,Consume foods rich in vitamin C and antioxidants
+174,174,Typhoid,Include protein-rich foods
+175,175,Typhoid,Avoid fatty and greasy foods
+176,176,Typhoid,Consult a healthcare professional
+177,177,Typhoid,Gradually resume normal diet
+178,178,Typhoid,Follow medical recommendations
+179,179,Typhoid,Avoid alcohol and caffeine
+180,180,hepatitis A,Stay hydrated
+181,181,hepatitis A,Consume nutrient-rich foods
+182,182,hepatitis A,Include protein-rich foods
+183,183,hepatitis A,Consume easily digestible foods
+184,184,hepatitis A,Limit fatty foods
+185,185,hepatitis A,Avoid alcohol and caffeine
+186,186,hepatitis A,Include vitamin C-rich foods
+187,187,hepatitis A,Consult a healthcare professional
+188,188,hepatitis A,Rest and conserve energy
+189,189,hepatitis A,Gradually resume normal diet
+190,190,Hepatitis B,Follow a balanced and nutritious diet
+191,191,Hepatitis B,Stay hydrated
+192,192,Hepatitis B,Include protein-rich foods
+193,193,Hepatitis B,Consume nutrient-rich foods
+194,194,Hepatitis B,Limit fatty foods
+195,195,Hepatitis B,Avoid alcohol and caffeine
+196,196,Hepatitis B,Include vitamin C-rich foods
+197,197,Hepatitis B,Consult a healthcare professional
+198,198,Hepatitis B,Rest and conserve energy
+199,199,Hepatitis B,Gradually resume normal diet
+200,200,Hepatitis C,Follow a balanced and nutritious diet
+201,201,Hepatitis C,Stay hydrated
+202,202,Hepatitis C,Include protein-rich foods
+203,203,Hepatitis C,Consume nutrient-rich foods
+204,204,Hepatitis C,Limit fatty foods
+205,205,Hepatitis C,Avoid alcohol and caffeine
+206,206,Hepatitis C,Include vitamin C-rich foods
+207,207,Hepatitis C,Consult a healthcare professional
+208,208,Hepatitis C,Rest and conserve energy
+209,209,Hepatitis C,Gradually resume normal diet
+210,210,Hepatitis D,Follow a balanced and nutritious diet
+211,211,Hepatitis D,Stay hydrated
+212,212,Hepatitis D,Include protein-rich foods
+213,213,Hepatitis D,Consume nutrient-rich foods
+214,214,Hepatitis D,Limit fatty foods
+215,215,Hepatitis D,Avoid alcohol and caffeine
+216,216,Hepatitis D,Include vitamin C-rich foods
+217,217,Hepatitis D,Consult a healthcare professional
+218,218,Hepatitis D,Rest and conserve energy
+219,219,Hepatitis D,Gradually resume normal diet
+220,220,Hepatitis E,Stay hydrated
+221,221,Hepatitis E,Consume nutrient-rich foods
+222,222,Hepatitis E,Include protein-rich foods
+223,223,Hepatitis E,Consume easily digestible foods
+224,224,Hepatitis E,Limit fatty foods
+225,225,Hepatitis E,Avoid alcohol and caffeine
+226,226,Hepatitis E,Include vitamin C-rich foods
+227,227,Hepatitis E,Consult a healthcare professional
+228,228,Hepatitis E,Rest and conserve energy
+229,229,Hepatitis E,Gradually resume normal diet
+230,230,Alcoholic hepatitis,Avoid alcohol consumption
+231,231,Alcoholic hepatitis,Follow a balanced and nutritious diet
+232,232,Alcoholic hepatitis,Stay hydrated
+233,233,Alcoholic hepatitis,Consume nutrient-rich foods
+234,234,Alcoholic hepatitis,Include protein-rich foods
+235,235,Alcoholic hepatitis,Limit fatty foods
+236,236,Alcoholic hepatitis,Include antioxidants
+237,237,Alcoholic hepatitis,Consult a healthcare professional
+238,238,Alcoholic hepatitis,Rest and conserve energy
+239,239,Alcoholic hepatitis,Gradually resume normal diet
+240,240,Tuberculosis,Consume a high-protein diet
+241,241,Tuberculosis,Include nutrient-rich foods
+242,242,Tuberculosis,Stay hydrated
+243,243,Tuberculosis,Consume foods rich in vitamins A and C
+244,244,Tuberculosis,Include zinc-rich foods
+245,245,Tuberculosis,Limit sugary foods and beverages
+246,246,Tuberculosis,Consult a healthcare professional
+247,247,Tuberculosis,Rest and conserve energy
+248,248,Tuberculosis,Gradually resume normal diet
+249,249,Tuberculosis,Follow medical recommendations
+250,250,Common Cold,Stay hydrated
+251,251,Common Cold,Include nutrient-rich foods
+252,252,Common Cold,Consume foods rich in vitamin C and antioxidants
+253,253,Common Cold,Include zinc-rich foods
+254,254,Common Cold,Limit sugary foods and beverages
+255,255,Common Cold,Consume chicken soup
+256,256,Common Cold,Consult a healthcare professional
+257,257,Common Cold,Rest and conserve energy
+258,258,Common Cold,Gradually resume normal diet
+259,259,Common Cold,Follow medical recommendations
+260,260,Pneumonia,Stay hydrated
+261,261,Pneumonia,Include nutrient-rich foods
+262,262,Pneumonia,Consume foods rich in vitamin C and antioxidants
+263,263,Pneumonia,Include zinc-rich foods
+264,264,Pneumonia,Limit sugary foods and beverages
+265,265,Pneumonia,Consume chicken soup
+266,266,Pneumonia,Consult a healthcare professional
+267,267,Pneumonia,Rest and conserve energy
+268,268,Pneumonia,Gradually resume normal diet
+269,269,Pneumonia,Follow medical recommendations
+270,270,Dimorphic hemmorhoids(piles),Consume high-fiber foods
+271,271,Dimorphic hemmorhoids(piles),Stay hydrated
+272,272,Dimorphic hemmorhoids(piles),Include nutrient-rich foods
+273,273,Dimorphic hemmorhoids(piles),Consume foods rich in flavonoids
+274,274,Dimorphic hemmorhoids(piles),Limit processed foods
+275,275,Dimorphic hemmorhoids(piles),Avoid spicy and greasy foods
+276,276,Dimorphic hemmorhoids(piles),Consult a healthcare professional
+277,277,Dimorphic hemmorhoids(piles),Practice good hygiene
+278,278,Dimorphic hemmorhoids(piles),Gradually resume normal diet
+279,279,Dimorphic hemmorhoids(piles),Follow medical recommendations
+280,280,Heart attack,Follow a heart-healthy diet
+281,281,Heart attack,Limit sodium intake
+282,282,Heart attack,Include fiber-rich foods
+283,283,Heart attack,Consume healthy fats
+284,284,Heart attack,Include lean proteins
+285,285,Heart attack,Limit sugary foods and beverages
+286,286,Heart attack,Stay hydrated
+287,287,Heart attack,Consult a healthcare professional
+288,288,Heart attack,Follow medical recommendations
+289,289,Heart attack,Engage in regular exercise
+290,290,Varicose veins,Consume a high-fiber diet
+291,291,Varicose veins,Stay hydrated
+292,292,Varicose veins,Include nutrient-rich foods
+293,293,Varicose veins,Consume foods rich in antioxidants
+294,294,Varicose veins,Limit sodium intake
+295,295,Varicose veins,Include flavonoid-rich foods
+296,296,Varicose veins,Avoid standing or sitting for long periods
+297,297,Varicose veins,Consult a healthcare professional
+298,298,Varicose veins,Follow medical recommendations
+299,299,Varicose veins,Engage in regular exercise
+300,300,Hypothyroidism,Include iodine-rich foods
+301,301,Hypothyroidism,Consume selenium-rich foods
+302,302,Hypothyroidism,Stay hydrated
+303,303,Hypothyroidism,Include nutrient-rich foods
+304,304,Hypothyroidism,Limit processed foods
+305,305,Hypothyroidism,Consume foods rich in vitamins B and D
+306,306,Hypothyroidism,Consult a healthcare professional
+307,307,Hypothyroidism,Follow medical recommendations
+308,308,Hypothyroidism,Maintain a stable weight
+309,309,Hypothyroidism,Engage in regular exercise
+310,310,Hyperthyroidism,Limit iodine intake
+311,311,Hyperthyroidism,Consume cruciferous vegetables in moderation
+312,312,Hyperthyroidism,Stay hydrated
+313,313,Hyperthyroidism,Include nutrient-rich foods
+314,314,Hyperthyroidism,Limit caffeine and alcohol
+315,315,Hyperthyroidism,Include omega-3 fatty acids
+316,316,Hyperthyroidism,Consult a healthcare professional
+317,317,Hyperthyroidism,Follow medical recommendations
+318,318,Hyperthyroidism,Maintain a stable weight
+319,319,Hyperthyroidism,Engage in regular exercise
+320,320,Hypoglycemia,Consume complex carbohydrates
+321,321,Hypoglycemia,Include protein-rich foods
+322,322,Hypoglycemia,Stay hydrated
+323,323,Hypoglycemia,Limit sugary foods and beverages
+324,324,Hypoglycemia,Consume regular meals and snacks
+325,325,Hypoglycemia,Consult a healthcare professional
+326,326,Hypoglycemia,Monitor blood sugar levels
+327,327,Hypoglycemia,Follow medical recommendations
+328,328,Hypoglycemia,Engage in regular physical activity
+329,329,Hypoglycemia,Limit alcohol intake
+330,330,Osteoarthristis,Consume anti-inflammatory foods
+331,331,Osteoarthristis,Include omega-3 fatty acids
+332,332,Osteoarthristis,Consume antioxidant-rich foods
+333,333,Osteoarthristis,Stay hydrated
+334,334,Osteoarthristis,Limit processed foods
+335,335,Osteoarthristis,Include vitamin K-rich foods
+336,336,Osteoarthristis,Consult a healthcare professional
+337,337,Osteoarthristis,Follow medical recommendations
+338,338,Osteoarthristis,Engage in low-impact exercise
+339,339,Osteoarthristis,Maintain a healthy weight
+340,340,Arthritis,Consume anti-inflammatory foods
+341,341,Arthritis,Include omega-3 fatty acids
+342,342,Arthritis,Consume antioxidant-rich foods
+343,343,Arthritis,Stay hydrated
+344,344,Arthritis,Limit processed foods
+345,345,Arthritis,Include vitamin K-rich foods
+346,346,Arthritis,Consult a healthcare professional
+347,347,Arthritis,Follow medical recommendations
+348,348,Arthritis,Engage in low-impact exercise
+349,349,Arthritis,Maintain a healthy weight
+350,350,(vertigo) Paroymsal  Positional Vertigo,"Avoid trigger foods (caffeine, alcohol)"
+351,351,(vertigo) Paroymsal  Positional Vertigo,Limit sodium intake
+352,352,(vertigo) Paroymsal  Positional Vertigo,Stay hydrated
+353,353,(vertigo) Paroymsal  Positional Vertigo,Consume ginger and ginkgo biloba
+354,354,(vertigo) Paroymsal  Positional Vertigo,Limit artificial sweeteners
+355,355,(vertigo) Paroymsal  Positional Vertigo,Consult a healthcare professional
+356,356,(vertigo) Paroymsal  Positional Vertigo,Avoid sudden head movements
+357,357,(vertigo) Paroymsal  Positional Vertigo,Follow medical recommendations
+358,358,(vertigo) Paroymsal  Positional Vertigo,Manage stress
+359,359,(vertigo) Paroymsal  Positional Vertigo,Limit caffeine and stimulants
+360,360,Acne,Consume a balanced diet
+361,361,Acne,Limit dairy and high-glycemic foods
+362,362,Acne,Include antioxidants
+363,363,Acne,Stay hydrated
+364,364,Acne,Limit processed foods
+365,365,Acne,Include zinc-rich foods
+366,366,Acne,Consult a skincare professional
+367,367,Acne,Practice good skincare hygiene
+368,368,Acne,Limit sugary foods and beverages
+369,369,Acne,Follow medical recommendations
+370,370,Urinary tract infection,Stay hydrated
+371,371,Urinary tract infection,Consume cranberry products
+372,372,Urinary tract infection,Include vitamin C-rich foods
+373,373,Urinary tract infection,Limit caffeine and alcohol
+374,374,Urinary tract infection,Consume probiotics
+375,375,Urinary tract infection,Avoid spicy and acidic foods
+376,376,Urinary tract infection,Consult a healthcare professional
+377,377,Urinary tract infection,Follow medical recommendations
+378,378,Urinary tract infection,Maintain good hygiene
+379,379,Urinary tract infection,Limit sugary foods and beverages
+380,380,Psoriasis,Consume anti-inflammatory foods
+381,381,Psoriasis,Include omega-3 fatty acids
+382,382,Psoriasis,Include vitamin D analogues
+383,383,Psoriasis,Limit alcohol consumption
+384,384,Psoriasis,Stay hydrated
+385,385,Psoriasis,Consult a healthcare professional
+386,386,Psoriasis,Limit processed foods
+387,387,Psoriasis,Follow medical recommendations
+388,388,Psoriasis,Manage stress
+389,389,Psoriasis,Consider phototherapy under medical guidance
+390,390,Impetigo,Maintain good hygiene
+391,391,Impetigo,Stay hydrated
+392,392,Impetigo,Consume nutrient-rich foods
+393,393,Impetigo,Limit sugary foods and beverages
+394,394,Impetigo,Include foods rich in vitamin C
+395,395,Impetigo,Consult a healthcare professional
+396,396,Impetigo,Follow medical recommendations
+397,397,Impetigo,Avoid scratching
+398,398,Impetigo,Take prescribed antibiotics
+399,399,Impetigo,Practice wound care
+400,400,Impetigo,Practice wound care
+401,401,Influenza (Flu),Rest well to help your body recover.
+402,402,Influenza (Flu),"Stay hydrated with fluids like water, soup, or herbal teas."
+403,403,Influenza (Flu),"Take over-the-counter pain relievers (e.g., acetaminophen) to manage fever and aches."
+404,404,Influenza (Flu),Use a humidifier or steam to ease congestion.
+405,405,Influenza (Flu),Avoid smoking and secondhand smoke to protect your lungs.
+406,406,Peptic ulcer diseae,"Avoid spicy, acidic, or fried foods that can irritate the stomach lining."
+407,407,Peptic ulcer diseae,Limit caffeine and alcohol intake.
+408,408,Peptic ulcer diseae,"Quit smoking, as it can delay healing and worsen symptoms."
+409,409,Peptic ulcer diseae,Manage stress through relaxation techniques like deep breathing or meditation.
+410,410,Peptic ulcer diseae,Stay hydrated by drinking plenty of water throughout the day.
+411,411,Peptic ulcer diseae,Follow your healthcare providers guidance on medication and treatment.
+412,412,Peptic ulcer diseae,Rest and avoid heavy physical activities during flare-ups.
+413,413,Diabetes,Monitor carbohydrate intake
+413,413,Diabetes,Eat balanced meals
+413,413,Diabetes,Include lean proteins
+413,413,Diabetes,Consume high-fiber foods
+413,413,Diabetes,Stay hydrated
+413,413,Diabetes,Limit sugary foods and beverages
+413,413,Diabetes,Include healthy fats
+413,413,Diabetes,Monitor blood sugar levels

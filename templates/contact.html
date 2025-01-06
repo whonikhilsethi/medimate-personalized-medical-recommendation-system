@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MediMate for any medical inquiries or questions.">
+    <title>Contact Us - MediMate</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon.png') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        /* Main container with flexbox */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* Left Side: Background Image */
+        .left-side {
+            flex: 1;
+            background: url("{{ url_for('static', filename='images/background_contact.png') }}") no-repeat center/cover;
+            background-size: cover;
+            height: 108%;
+            position: relative;
+            margin-left: 1px;
+        }
+
+        /* Overlay for left side */
+        .left-side::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        /* Content container styling */
+        .left-side .content {
+            margin-top: 30%;
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Heading styling */
+        .left-side h3 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color:#f5af19;
+        }
+
+        /* Paragraph styling */
+        .left-side p {
+            font-size: 20px;
+            font-weight: 600;
+            display:block;
+            vertical-align: middle;
+            color:#86fde8;
+            margin-top:10px;
+
+        }
+
+        .left-side strong{
+            color:#FFEFBA;
+            font-size:25px;
+        }
+
+        /* Icon styling */
+        .left-side i {
+            font-size: 2.5rem;
+            color: #ddd6f3;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        /* Link styling */
+        .left-side a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            font-size:22px;
+        }
+
+        .left-side a:hover {
+            transform: scale(1.05);
+            color:#FFAFBD;
+        }
+
+        /* Right Side: Contact Form */
+        .right-side {
+            flex: 0.9;
+            background: linear-gradient(to top, rgba(131, 96, 195, 0.3), rgba(46, 191, 145, 0.3));
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+            margin: 45px 20px 10px 20px;
+            max-width: 700px;
+        }
+
+        .right-side h2 {
+            font-weight: 700;
+            color: #F00000;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .right-side p {
+            text-align: center;
+            color: #283c86;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight:600;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            border-radius: 8px;
+            border: 1px solid #480048;
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+            font-size: 16px;
+            background:#eef2f3;
+        }
+
+        .contact-form textarea {
+            height: 70px;
+        }
+
+        .contact-form label{
+            color:#434343;
+        }
+
+        .contact-form button {
+            background-color: #004e92;
+            color: #fff;
+            padding: 8px 15px;
+            margin-left:32px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            width: 90%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border:1px solid white;
+        }
+
+        .contact-form button:hover {
+            background-color: #4286f4;
+            transform: scale(1.05);
+            margin-left:32px;
+        }
+
+
+
+
+
+        .custom-modal .modal-content {
+            background: linear-gradient(to top, #c9d6ff, #e2e2e2);
+            color: white;  /* Optional: to ensure the text is visible on the green background */
+            border:none;
+        }
+
+        .custom-modal .modal-header {
+            border-bottom: none !important;
+        }
+        .custom-modal .modal-footer {
+            border-top: none !important;
+        }
+
+        .custom-modal .modal-body p{
+            font-size:25px;
+            color:#302b63;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar custom-navbar">
+    <div class="navbar-logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-image">
+        <span class="navbar-title">Medimate - Medical Recommendation System</span>
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        <li><a href="{{ url_for('review') }}">Reviews</a></li>
+    </ul>
+    <div class="navbar-search">
+        <input type="search" placeholder="Search...">
+        <button>Search</button>
+    </div>
+</nav>
+
+
+
+<div class="main-container">
+    <!-- Left Side: Background Image -->
+    <div class="left-side">
+        <div class="content">
+            <h3>Get in Touch</h3>
+            <p>If you have any questions or need support regarding MediMate's personalized medical recommendations, feel
+                free to reach out to us!</p>
+            <p><i class="fas fa-phone-alt"></i> <strong>Call Us:</strong> <a href="tel:+01112345678">011-1234-5678</a>
+            </p>
+            <p><i class="fas fa-envelope"></i> <strong>Email Us:</strong> <a href="mailto:info@medimate.com">info@medimate.com</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div class="right-side">
+        <h2>Reach Out to MediMate</h2>
+        <p>We respond within 24 hours!</p>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" placeholder="Your Full Name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" placeholder="Your Email Address" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Your Phone Number">
+            </div>
+
+            <div class="mb-3">
+                <label for="contact-method" class="form-label">Preferred Contact Method</label>
+                <select id="contact-method" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message or Enquiry</label>
+                <textarea id="message" placeholder="Enter Your message or enquiry here" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Bootstrap Modal -->
+        <div class="modal fade success" id="confirmationModal" tabindex="-1" role="dialog"
+             aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal-dialog custom-modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmationModalLabel" style="color:#000c40">Thank you for reaching
+                            out!</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>We'll respond within 24 hours.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-top">
+        <div class="footer-logo-menu">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="footer-logo">
+            <div class="footer-menu">
+                 <a href="{{url_for('home')}}">Home</a>
+                <span>|</span>
+                <a href="{{url_for('about')}}">About Us</a>
+                <span>|</span>
+                <a href="{{url_for('contact')}}">Contact Us</a>
+                <span>|</span>
+                <a href="{{url_for('review')}}">Reviews</a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <p>
+                <img src="{{ url_for('static', filename='images/call.png') }}" alt="Phone" class="footer-icon">
+                Call Us: <a href="tel:011 1234 5678">011-1234-5678</a>
+            </p>
+            <p>
+                <img src="{{ url_for('static', filename='images/email.png') }}" alt="Email" class="footer-icon">
+                Email Us: <a href="info@medimate.com">info@medimate.com</a>
+            </p>
+        </div>
+        <div class="footer-description">
+            <p>AI-based Medical Recommendation System analyzing <strong>
+                132 symptoms </strong> for <strong> 41 diseases</strong>. Providing personalized health insights and
+                recommendations.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 Medimate. All rights reserved.
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevents the form from submitting the traditional way
+
+      // Show the confirmation modal
+      $('#confirmationModal').modal('show');
+
+      // Optionally, you can reset the form after submission
+      document.getElementById("contactForm").reset();
+  });
+
+</script>
+
+</body>
+</html>
