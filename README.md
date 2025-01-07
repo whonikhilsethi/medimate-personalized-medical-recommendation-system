@@ -85,11 +85,11 @@ After setting up the environment, follow these steps to run the application loca
 
 ## Acknowledgments 🙏
 Thanks to the open-source community for the tools and libraries used in this project.
-Special thanks to my teammates: [@Nikhil Sethi](https://github.com/whonikhilsethi), [@Prason Jena](https://github.com/Prason2912), and [@Bhavish Makkar](https://github.com/Bhavish-Makkar) for their valuable contributions to the project.
+Special thanks to my teammates: [@Darshh Chhabra](https://github.com/darshh009), [@Prason Jena](https://github.com/Prason2912), and [@Bhavish Makkar](https://github.com/Bhavish-Makkar) for their valuable contributions to the project.
 
 ## Feedback & Improvements 💬
 
-For feedback or suggestions, feel free to reach out via email at **darshhwork@gmail.com**. 📧
+For feedback or suggestions, feel free to reach out via email at **nikhilsethi2k3@gmail.com**. 📧
 
 This project is continuously evolving, and we welcome your insights to help improve and enhance its features. 🚀💡
 
