@@ -53,7 +53,7 @@ This web application uses AI and machine learning to analyze **132 symptoms** an
 1. Clone this repository:
    
    ```bash
-   git clone https://github.com/yourusername/medimate.git
+   git clone https://github.com/whonikhilsethi/medimate-personalized-medical-recommendation-system.git
    
 3. Navigate to the project directory:
    
